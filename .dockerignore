@@ -1,0 +1,14 @@
+.env.dev
+.env.example
+.gitignore
+docker-compose.yml
+docker-compose.dev.yml
+Dockerfile
+Dockerfile.dev
+dropdocker.sh
+up.dev.v2.sh
+
+LICENSE
+README.md
+.git
+.dockerignore
