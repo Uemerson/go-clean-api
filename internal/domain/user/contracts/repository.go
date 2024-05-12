@@ -8,5 +8,6 @@ import (
 type Repository interface {
 	Add(u *model.User) *exception.Exception
 	LoadByEmail(email string) (*model.User, *exception.Exception)
+	Load() ([]model.User, *exception.Exception)
 	Migration()
 }
