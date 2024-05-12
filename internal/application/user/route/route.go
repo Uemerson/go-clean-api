@@ -21,4 +21,5 @@ func UserRoute(mux *http.ServeMux, db *gorm.DB) {
 	r.Migration()
 
 	mux.HandleFunc("POST /", uh.Add)
+	mux.HandleFunc("GET /", uh.Load)
 }
