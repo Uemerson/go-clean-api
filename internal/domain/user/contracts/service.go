@@ -7,4 +7,5 @@ import (
 
 type Service interface {
 	Add(name, email, password string) (*model.User, *exception.Exception)
+	Load() ([]model.User, *exception.Exception)
 }
