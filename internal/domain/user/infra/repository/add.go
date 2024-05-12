@@ -8,6 +8,7 @@ import (
 
 func (r *Repository) Add(u *model.User) *exception.Exception {
 	result := r.db.Create(&entity.User{
+		Id:        u.Id,
 		Name:      u.Name,
 		Email:     u.Email,
 		Password:  u.Password,
